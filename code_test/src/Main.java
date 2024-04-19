@@ -1,17 +1,45 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder str = new StringBuilder();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        while(true){
+            int N = Integer.parseInt(br.readLine());
+            if(N == -1)
+                break;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+            // 약수를 담아 둘 list
+            ArrayList<Integer> list = new ArrayList<>();
+            // 조건에 부합하는지
+            int sum = 0;
+
+            for(int i = 1; i < N; i++){
+                // 약수라면 list에 추가하고 합을 구한다.
+                if(N % i == 0) {
+                    list.add(i);
+                    sum += i;
+                }
+            }
+            str.append(N);
+            if(N == sum) {
+                str.append(" = ");
+                for (int i = 0; i < list.size()-1; i++)
+                    str.append(list.get(i) + " + ");
+                str.append(list.get(list.size()-1));
+            }
+            else
+                str.append(" is NOT perfect.");
+            str.append("\n");
         }
+
+        System.out.print(str);
+        br.close();
+
     }
 }
