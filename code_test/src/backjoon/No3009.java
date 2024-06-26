@@ -39,6 +39,6 @@ public class No3009 {
             b = y[1];
         } else b = y[0];
 
-        System.out.println(a + " "+b);
+        System.out.println(a + " "+ b);
     }
 }
