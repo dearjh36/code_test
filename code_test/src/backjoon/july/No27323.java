@@ -1,7 +1,6 @@
-package backjoon;
+package backjoon.july;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class No27323 {
