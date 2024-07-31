@@ -1,13 +1,16 @@
-package backjoon.july5;
+package backjoon.july;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class No24263 {
+public class No27323 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println(Integer.parseInt(br.readLine()));
-        System.out.println(1);
+        int a = Integer.parseInt(br.readLine());
+        int b = Integer.parseInt(br.readLine());
+
+        System.out.println(a*b);
+
     }
 }

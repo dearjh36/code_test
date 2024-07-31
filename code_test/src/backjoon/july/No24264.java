@@ -1,4 +1,4 @@
-package backjoon.july5;
+package backjoon.july;
 
 import java.util.Scanner;
 
