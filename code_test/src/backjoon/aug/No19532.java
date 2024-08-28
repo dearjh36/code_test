@@ -13,8 +13,8 @@ public class No19532 {
         int e = sc.nextInt();
         int f = sc.nextInt();
 
-        int y = (a*f - d*c)/(a*e - d*b);
-        int x = (c - b * y)/a;
+        int y = (c*d - a*f) / (b*d - a*e);
+        int x = (c*e- b*f) / (a*e - b*d);
 
         System.out.println(x +" "+ y);
 
