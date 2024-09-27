@@ -4,6 +4,8 @@ import java.io.IOException;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) throws Exception {
-
+        System.out.println((66612% 10000)/10);
+        System.out.println((66612% 10));
+        System.out.println(653 % 10 );
     }
 }
