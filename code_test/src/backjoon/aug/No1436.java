@@ -8,7 +8,18 @@ public class No1436 {
 
         int N = in.nextInt();
 
-        
+        int count = 1;
+        int num = 666;
+
+        while (count != N){
+            num++;
+
+            if (String.valueOf(num).contains("666")){
+                count++;
+            }
+        }
+
+        System.out.println(num);
     }
 
 }
