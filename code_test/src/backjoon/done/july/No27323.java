@@ -1,4 +1,4 @@
-package backjoon.july;
+package backjoon.done.july;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

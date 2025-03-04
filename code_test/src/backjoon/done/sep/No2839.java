@@ -1,4 +1,4 @@
-package backjoon.sep;
+package backjoon.done.sep;
 
 import java.util.Arrays;
 import java.util.Scanner;

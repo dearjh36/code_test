@@ -1,4 +1,4 @@
-package backjoon.aug;
+package backjoon.done.aug;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
