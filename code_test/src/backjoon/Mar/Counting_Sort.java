@@ -23,9 +23,20 @@ public class Counting_Sort {
         }
 
         // 과정 2
-        for (int i = 1; i < cnt.length; i++){
+        for(int i = 1; i < cnt.length; i++) {
             // 누적 합 해주기
-            cnt[i] += cnt[i-1];
+            cnt[i] += cnt[i - 1];
+        }
+
+        // 과정 3
+        for(int i = arr.length - 1; i >= 0; i--) {
+            /*
+             *  i 번쨰 원소를 인덱스로 하는 counting 배열을 1 감소시킨 뒤
+             *  counting 배열의 값을 인덱스로 하여 result에 value 값을 저장한다.
+             */
+            int value = arr[i];
+            cnt[value]--;
+            result[cnt[value]] = value;
         }
 
     }
