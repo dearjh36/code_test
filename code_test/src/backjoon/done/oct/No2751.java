@@ -1,4 +1,4 @@
-package backjoon.oct;
+package backjoon.done.oct;
 
 import java.util.Scanner;
 
