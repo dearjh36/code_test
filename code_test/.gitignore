@@ -1,4 +1,6 @@
 ### IntelliJ IDEA ###
+.idea/
+*.iml
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
@@ -27,3 +29,25 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Gradle ###
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Java ###
+*.class
+*.log
+
+### 기타 캐시 및 임시 파일 ###
+*.tmp
+*.swp
+.cache/
+
+### 테스트 리포트 및 결과 ###
+/test-results/
+/test-report/
+
+### 환경 파일 (선택) ###
+*.env
